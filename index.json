@@ -25,9 +25,8 @@
       "description": "Turn your agent into a 7-role Hyperliquid trading desk: research, risk, ticketed execution and review. Portable Agent Plugin with sixteen skills and seven role prompts.",
       "author": "Galleon Labs",
       "repo": "galleonlabs/hypergrok-trading-desk",
-      "subdir": null,
-      "homepage": "https://github.com/galleonlabs/hypergrok-trading-desk",
-      "tags": ["trading", "hyperliquid", "skills", "agent-plugin"],
+      "homepage": "https://galleonlabs.io",
+      "tags": ["hypergrok", "hyperliquid", "trading-desk", "agent-plugin"],
       "capabilities": ["skills"]
     }
   ]
