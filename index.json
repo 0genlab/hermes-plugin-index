@@ -31,6 +31,16 @@
       "capabilities": ["dashboard"],
       "api_version": 1,
       "added_at": "2026-08-22"
+    },
+    {
+      "name": "workspace-context",
+      "description": "Shows the active session context-window usage (used / total + a percentage bar) above the desktop composer.",
+      "author": "meviusisback",
+      "tags": ["desktop", "context-window", "composer", "ui"],
+      "repo": "meviusisback/hermes-workspace-context",
+      "ref": "2d4b3feeb47616f9a2065037a7128781e6a3770a",
+      "homepage": "https://github.com/meviusisback/hermes-workspace-context",
+      "capabilities": ["desktop-ui"]
     }
   ]
 }
