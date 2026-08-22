@@ -19,6 +19,18 @@
       "homepage": "https://revell.ai",
       "tags": ["context-engine"],
       "capabilities": ["context-engine"]
+    },
+    {
+      "name": "usage-center",
+      "description": "Hermes Usage Center — local token stats plus official Grok, Codex, and Claude quota in the desktop sidebar and status bar.",
+      "author": "Chen Leshu",
+      "tags": ["usage", "tokens", "quota", "desktop", "observability"],
+      "repo": "chenleshu/hermes-usage-center",
+      "ref": "255f9c80e7df34b99dcc1fe0a57ddfcb19f5030e",
+      "homepage": "https://github.com/chenleshu/hermes-usage-center",
+      "capabilities": ["dashboard"],
+      "api_version": 1,
+      "added_at": "2026-08-22"
     }
   ]
 }
