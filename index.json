@@ -21,10 +21,33 @@
       "capabilities": ["context-engine"]
     },
     {
+      "name": "usage-center",
+      "description": "Hermes Usage Center — local tokens plus official Grok/Codex/Claude quota, with reset-cycle usage beside remaining percent.",
+      "author": "Chen Leshu",
+      "tags": ["usage", "tokens", "quota", "desktop", "observability"],
+      "repo": "chenleshu/hermes-usage-center",
+      "ref": "7f480c3f45760314c2505f14a62bb4ce7e0a6666",
+      "homepage": "https://github.com/chenleshu/hermes-usage-center",
+      "capabilities": ["dashboard"],
+      "api_version": 1,
+      "added_at": "2026-08-22"
+    },
+    {
+      "name": "workspace-context",
+      "description": "Shows the active session context-window usage (used / total + a percentage bar) above the desktop composer.",
+      "author": "meviusisback",
+      "tags": ["desktop", "context-window", "composer", "ui"],
+      "repo": "meviusisback/hermes-workspace-context",
+      "ref": "2d4b3feeb47616f9a2065037a7128781e6a3770a",
+      "homepage": "https://github.com/meviusisback/hermes-workspace-context",
+      "capabilities": ["desktop-ui"]
+    },
+    {
       "name": "hypergrok",
       "description": "Turn your agent into a 7-role Hyperliquid trading desk: research, risk, ticketed execution and review. Portable Agent Plugin with sixteen skills and seven role prompts.",
       "author": "Galleon Labs",
       "repo": "galleonlabs/hypergrok-trading-desk",
+      "ref": "62cbe227a2ec531e0efa37254d4b6fae043fbfe5",
       "homepage": "https://galleonlabs.io",
       "tags": ["hypergrok", "hyperliquid", "trading-desk", "agent-plugin"],
       "capabilities": ["skills"]

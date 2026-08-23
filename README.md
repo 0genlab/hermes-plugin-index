@@ -10,9 +10,26 @@ Open a PR that adds an entry to `index.json`. Minimum fields:
 
 - `name` — the bare name users type after `hermes plugins install`
 - `repo` — `owner/repo` on GitHub
+- `ref` — **a full 40-character commit SHA.** Not a branch, not a tag
 - `subdir` — optional path inside the repo, for monorepos hosting multiple plugins
 
 Recommended fields: `description`, `author`, `homepage`, `tags`, `capabilities`.
+
+`ref` is a full SHA because a branch or tag can be moved after review. A commit
+cannot. What was reviewed is what installs.
+
+### House rules
+
+- **List a plugin you own or maintain.** Not someone else's repo.
+- **One plugin per PR.**
+- **Only the listing author edits their own entry.**
+- Entries may be removed if the repo disappears, goes private, or is reported
+  malicious.
+
+### Reporting a plugin problem
+
+Open it on that plugin's own repo, not here. This index carries metadata; it
+does not host the code and cannot fix it.
 
 The schema is defined by `PluginIndexEntry` in [hermes_cli/plugin_index.py](https://github.com/NousResearch/hermes-agent/blob/main/hermes_cli/plugin_index.py).
 
