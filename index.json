@@ -41,6 +41,16 @@
       "ref": "2d4b3feeb47616f9a2065037a7128781e6a3770a",
       "homepage": "https://github.com/meviusisback/hermes-workspace-context",
       "capabilities": ["desktop-ui"]
+    },
+    {
+      "name": "hypergrok",
+      "description": "Turn your agent into a 7-role Hyperliquid trading desk: research, risk, ticketed execution and review. Portable Agent Plugin with sixteen skills and seven role prompts.",
+      "author": "Galleon Labs",
+      "repo": "galleonlabs/hypergrok-trading-desk",
+      "ref": "62cbe227a2ec531e0efa37254d4b6fae043fbfe5",
+      "homepage": "https://galleonlabs.io",
+      "tags": ["hypergrok", "hyperliquid", "trading-desk", "agent-plugin"],
+      "capabilities": ["skills"]
     }
   ]
 }
