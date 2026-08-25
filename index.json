@@ -1,6 +1,26 @@
 {
   "plugins": [
     {
+      "name": "billing",
+      "description": "Nous Portal usage widget for Hermes Desktop \u2014 remaining spendable credits plus the plan-usage percentage in the statusbar, colour-coded (green while healthy, red when the plan is >=90% used). Hover shows plan / top-up / rollover detail; click opens the portal billing page.",
+      "author": "anotherchu",
+      "tags": [
+        "desktop",
+        "usage",
+        "billing",
+        "nous-portal",
+        "statusbar"
+      ],
+      "repo": "anotherchu/billing",
+      "ref": "339489137c8cbbb81fa90ff7ad50466eb0156199",
+      "homepage": "https://github.com/anotherchu/billing",
+      "capabilities": [
+        "dashboard"
+      ],
+      "api_version": 1,
+      "added_at": "2026-08-25"
+    },
+    {
       "name": "revell",
       "description": "Revell memory provider for Hermes \u2014 verbatim boot payload delivery at session start and on compaction, cross-session identity continuity, agent-first memory framing.",
       "author": "Revell, Inc.",
