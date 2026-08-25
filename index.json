@@ -101,22 +101,6 @@
       "capabilities": [
         "skills"
       ]
-    },
-    {
-      "name": "llm-pqr",
-      "description": "Opt-in policy routing for Hermes. Consumes the llm-pqr library before a provider call and rewrites only the selected model (plus provider/base_url when those keys already exist). Missing config is a no-op. Independently maintained by Amazed Labs; not an official Nous Research router. No telemetry.",
-      "author": "Amazed Labs",
-      "tags": [
-        "routing",
-        "policy",
-        "model-selection"
-      ],
-      "repo": "Amazed-Labs/llm-pqr",
-      "ref": "028677f395fa9070f86ed8f4d2f7f6ce17ebb739",
-      "subdir": "integrations/hermes-plugin",
-      "homepage": "https://github.com/Amazed-Labs/llm-pqr",
-      "api_version": 1,
-      "added_at": "2026-08-24"
     }
   ]
 }
