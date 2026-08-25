@@ -1,6 +1,26 @@
 {
   "plugins": [
     {
+      "name": "billing",
+      "description": "Nous Portal usage widget for Hermes Desktop \u2014 remaining spendable credits plus the plan-usage percentage in the statusbar, colour-coded (green while healthy, red when the plan is >=90% used). Hover shows plan / top-up / rollover detail; click opens the portal billing page.",
+      "author": "anotherchu",
+      "tags": [
+        "desktop",
+        "usage",
+        "billing",
+        "nous-portal",
+        "statusbar"
+      ],
+      "repo": "anotherchu/billing",
+      "ref": "339489137c8cbbb81fa90ff7ad50466eb0156199",
+      "homepage": "https://github.com/anotherchu/billing",
+      "capabilities": [
+        "dashboard"
+      ],
+      "api_version": 1,
+      "added_at": "2026-08-25"
+    },
+    {
       "name": "revell",
       "description": "Revell memory provider for Hermes \u2014 verbatim boot payload delivery at session start and on compaction, cross-session identity continuity, agent-first memory framing.",
       "author": "Revell, Inc.",
@@ -83,18 +103,22 @@
       ]
     },
     {
-      "name": "llm-pqr",
-      "description": "Opt-in policy routing for Hermes. Consumes the llm-pqr library before a provider call and rewrites only the selected model (plus provider/base_url when those keys already exist). Missing config is a no-op. Independently maintained by Amazed Labs; not an official Nous Research router. No telemetry.",
-      "author": "Amazed Labs",
+      "name": "aihubmix",
+      "description": "AIHubMix model provider for Hermes. Registers the aihubmix provider over the OpenAI-compatible endpoint and filters the /model picker to tool-capable models. Install into ~/.hermes/plugins/model-providers/ or via pip; see the README.",
+      "author": "AIHubMix",
+      "repo": "AIhubmix/hermes-provider-aihubmix",
+      "ref": "bdd682a1f43f7ebf6a5fa6c835530f638822c74c",
+      "subdir": "aihubmix",
+      "homepage": "https://github.com/AIhubmix/hermes-provider-aihubmix",
       "tags": [
-        "routing",
-        "policy",
-        "model-selection"
+        "model-provider",
+        "openai-compatible",
+        "aggregator",
+        "aihubmix"
       ],
-      "repo": "Amazed-Labs/llm-pqr",
-      "ref": "028677f395fa9070f86ed8f4d2f7f6ce17ebb739",
-      "subdir": "integrations/hermes-plugin",
-      "homepage": "https://github.com/Amazed-Labs/llm-pqr",
+      "capabilities": [
+        "model-provider"
+      ],
       "api_version": 1,
       "added_at": "2026-08-24"
     },
