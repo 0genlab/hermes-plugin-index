@@ -97,6 +97,29 @@
       "homepage": "https://github.com/Amazed-Labs/llm-pqr",
       "api_version": 1,
       "added_at": "2026-08-24"
+    },
+    {
+      "name": "my-journal",
+      "description": "Privacy-first progression journal for Hermes that turns explicitly approved conversations into validated daily Markdown with evidence, backfill, protected scheduling, and cross-platform support.",
+      "author": "Jaden Gibson",
+      "tags": [
+        "journal",
+        "progression",
+        "markdown",
+        "privacy",
+        "automation"
+      ],
+      "repo": "Jadencreatescode/my-journal",
+      "ref": "a869b5244a2e9c89bf24350225d34feaf3450a79",
+      "subdir": "plugins/my-journal",
+      "homepage": "https://jadencreatescode.github.io/my-journal/",
+      "capabilities": [
+        "tools",
+        "cli",
+        "skills"
+      ],
+      "api_version": 1,
+      "added_at": "2026-08-25"
     }
   ]
 }
