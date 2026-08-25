@@ -101,6 +101,26 @@
       "capabilities": [
         "skills"
       ]
+    },
+    {
+      "name": "aihubmix",
+      "description": "AIHubMix model provider for Hermes. Registers the aihubmix provider over the OpenAI-compatible endpoint and filters the /model picker to tool-capable models. Install into ~/.hermes/plugins/model-providers/ or via pip; see the README.",
+      "author": "AIHubMix",
+      "repo": "AIhubmix/hermes-provider-aihubmix",
+      "ref": "bdd682a1f43f7ebf6a5fa6c835530f638822c74c",
+      "subdir": "aihubmix",
+      "homepage": "https://github.com/AIhubmix/hermes-provider-aihubmix",
+      "tags": [
+        "model-provider",
+        "openai-compatible",
+        "aggregator",
+        "aihubmix"
+      ],
+      "capabilities": [
+        "model-provider"
+      ],
+      "api_version": 1,
+      "added_at": "2026-08-25"
     }
   ]
 }
