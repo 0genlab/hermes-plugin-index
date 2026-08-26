@@ -29,8 +29,9 @@ plugin at `~/.hermes/plugins/<name>/` while the provider registry only
 discovers providers under `model-providers/<name>/`. The provider never loads.
 
 This is a client-side path mismatch, not an index problem. Tracked at
-NousResearch/hermes-agent#76372, with a fix open at
-NousResearch/hermes-agent#76387.
+[NousResearch/hermes-agent#76372](https://github.com/NousResearch/hermes-agent/issues/76372),
+with a fix open at
+[NousResearch/hermes-agent#76387](https://github.com/NousResearch/hermes-agent/pull/76387).
 
 ## Contributing
 
