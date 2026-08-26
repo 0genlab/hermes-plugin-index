@@ -20,6 +20,18 @@ Full identifiers need no configuration:
 $ hermes plugins install Revell-ai/revell-onyx
 ```
 
+### Known limitation: model-provider entries
+
+Entries with `kind: model-provider` are discoverable through this index but do
+not currently install correctly — by bare name or by full identifier. The
+install reports success and passes the security scan, but Hermes places the
+plugin at `~/.hermes/plugins/<name>/` while the provider registry only
+discovers providers under `model-providers/<name>/`. The provider never loads.
+
+This is a client-side path mismatch, not an index problem. Tracked at
+NousResearch/hermes-agent#76372, with a fix open at
+NousResearch/hermes-agent#76387.
+
 ## Contributing
 
 Open a PR that adds an entry to `index.json`. Minimum fields:
