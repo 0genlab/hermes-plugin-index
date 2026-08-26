@@ -4,6 +4,22 @@ Community plugin index for [Hermes Agent](https://github.com/NousResearch/hermes
 
 `hermes plugins install <bare-name>` resolves names through this index. `hermes plugins search <term>` searches it. The list here is what `hermes_cli/plugin_index.py` reads.
 
+## Pointing your client here
+
+Bare-name resolution reads whichever index the client is configured with. To use
+this one, add to `~/.hermes/config.yaml`:
+
+```yaml
+plugins:
+  index_url: https://raw.githubusercontent.com/Revell-ai/hermes-plugin-index/main/index.json
+```
+
+Full identifiers need no configuration:
+
+```console
+$ hermes plugins install Revell-ai/revell-onyx
+```
+
 ## Contributing
 
 Open a PR that adds an entry to `index.json`. Minimum fields:
