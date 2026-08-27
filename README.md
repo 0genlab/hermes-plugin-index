@@ -24,9 +24,26 @@ $ hermes plugins install Revell-ai/revell-onyx
 
 Entries with `kind: model-provider` are discoverable through this index but do
 not currently install correctly — by bare name or by full identifier. The
-install reports success and passes the security scan, but Hermes places the
-plugin at `~/.hermes/plugins/<name>/` while the provider registry only
-discovers providers under `model-providers/<name>/`. The provider never loads.
+install reports success and the security scan passes, but Hermes places the
+plugin under `~/.hermes/plugins/` while the provider registry only discovers
+providers under `~/.hermes/plugins/model-providers/`. The provider never loads.
+
+`hermes plugins enable` does not rescue it. Enable also reports success, and
+the provider still does not load — which is where the debugging time tends to
+go.
+
+The directory it lands in is not necessarily the name you typed. The installer
+takes `manifest["name"]` when it can read a manifest, falls back to the
+`subdir` basename, and falls back again to the repository name
+([plugins_cmd.py#L800](https://github.com/NousResearch/hermes-agent/blob/main/hermes_cli/plugins_cmd.py#L800)).
+An `owner/repo` install of a plugin whose manifest lives in a subdirectory
+therefore finds no manifest at the root and installs the whole repository under
+its repo name. The `owner/repo/subdir` form resolves to the same directory as
+the bare name and is the better one to publish:
+
+```console
+$ hermes plugins install Revell-ai/revell-onyx/lark
+```
 
 This is a client-side path mismatch, not an index problem. Tracked at
 [NousResearch/hermes-agent#76372](https://github.com/NousResearch/hermes-agent/issues/76372),
@@ -66,7 +83,7 @@ The schema is defined by `PluginIndexEntry` in [hermes_cli/plugin_index.py](http
 
 ## Hosting
 
-This repository is hosted under the [Revell-ai](https://github.com/Revell-ai) org as ecosystem infrastructure. Ownership can transfer to [NousResearch](https://github.com/NousResearch) whenever they'd like it under their org — see NousResearch/hermes-agent#87565 for the conversation.
+This repository is hosted under the [Revell-ai](https://github.com/Revell-ai) org as ecosystem infrastructure. Ownership can transfer to [NousResearch](https://github.com/NousResearch) whenever they'd like it under their org — see [NousResearch/hermes-agent#87565](https://github.com/NousResearch/hermes-agent/issues/87565) for the conversation.
 
 ## License
 
